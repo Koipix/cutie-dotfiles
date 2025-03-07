@@ -2,6 +2,7 @@
 
 DOTFILES_DIR=~/dotfiles
 CONFIG_DIR=~/.config
+LOCAL_DIR=~/.local
 BACKUP_DIR=~/dotfiles_backup
 
 mkdir -p "$BACKUP_DIR"
@@ -13,6 +14,7 @@ declare -A DOTFILES
 DOTFILES=(
     [neofetch]="$CONFIG_DIR/neofetch"
     [Kvantum]="$CONFIG_DIR/Kvantum"
+    [konsole]="$LOCAL_DIR/share/konsole"
 )
 
 for key in "${!DOTFILES[@]}"; do
