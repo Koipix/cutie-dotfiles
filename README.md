@@ -7,6 +7,15 @@
 
 <br>
 
+### Currently Tracked Dotfiles:
+  - konsole
+  - neofetch
+  - Kvantum
+
+<p>Frequently adding my configs at a slowish pace.. I'm still checking for types of dotfiles to upload </p>
+
+<br>
+
 ### Installation
 ```bash
 git clone https://github.com/Koipix/cutie-dotfiles.git
@@ -14,19 +23,26 @@ cd cutie-dotfiles/script
 ```
 
 ### Apply Rice
-While on `./script/` directory
+This applies the rice setup from the repo to your machine
 ```
 ./mklink.sh
 ```
 
-### Restorice
-If you want to restore to your own rice setup
+### Restore Rice
+If you want to restore back to your own rice setup
 ```
 ./mkrestore.sh
 ```
+
+### Upload Rice
+If you want to upload your own confiig changes to the repo (experimental)
+```
+./mkupload.sh
+```
+
 <br>
 
-<p>PS: <b>This is a experimental project of mine</b>—this might not work on your system or even bweak it but give it a try as long as you got the required dependencies and packages, feel free to review the shell scripts ♡</p>
+<p>PS: <b>This is a experimental personal project of mine</b>—this might not work on your system or even bweak it but give it a try as long as you got the required dependencies and packages, feel free to review the shell scripts ♡</p>
 
 <br>
 
