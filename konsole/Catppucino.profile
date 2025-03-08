@@ -11,7 +11,11 @@ TerminalColumns=113
 TerminalMargin=5
 
 [Scrolling]
+HighlightScrolledLines=false
+HistoryMode=1
+ReflowLines=false
 ScrollBarPosition=2
+ScrollFullPage=0
 
 [Terminal Features]
 BlinkingCursorEnabled=true
