@@ -15,30 +15,36 @@ DOTFILES=(
     [neofetch]="$CONFIG_DIR/neofetch"
     [Kvantum]="$CONFIG_DIR/Kvantum"
     [konsole]="$LOCAL_DIR/share/konsole"
+    [bash]="$HOME/.bashrc"
 )
 
 for key in "${!DOTFILES[@]}"; do
     TARGET="${DOTFILES[$key]}"
     SOURCE="$DOTFILES_DIR/$key"
+    IS_FILE=false
 
-    # check if dotfile alweady exist othewise cweate the folder
-    mkdir -p "$(dirname "$SOURCE")"
-
-    # skip woop if alweady symlinked (pwevent bweaking my systuwm)
-    if [ -L "$TARGET" ]; then
-        echo "Replacing your config for $key"
-        rm "$TARGET"
+    # check if it's a single file or directory
+    if [ -f "$TARGET" ]; then
+        FILENAME="$(basename "$TARGET")"
+        IS_FILE=true
     fi
 
     # backup existing config if it's not symlinked, to ensure safe delivery~
-    if [ -e "$TARGET" ] && [ ! -L "$TARGET" ]; then
-        mv "$TARGET" "$BACKUP_DIR/"
-        echo "Backed up $key to $BACKUP_DIR"
+    if [ -e "$TARGET" ] && [ ! -L "$TARGET" ]; then     
+        echo "Backing up your $key to $BACKUP_DIR"
+        mv "$TARGET" "$BACKUP_DIR"
     fi
 
-    # cweate symwink because they were meant to be together <3
-    ln -s "$SOURCE" "$TARGET"
-    echo "$key configuwation compweted!"
+    if [ -L "$TARGET" ]; then
+        echo "$key has existing symlink, this will be ignored"
+        continue
+    fi
+
+    if [ "$IS_FILE" = true ]; then
+        ln -s "$SOURCE/$FILENAME" "$TARGET"
+    else
+        ln -s "$SOURCE" "$TARGET"
+    fi
 done
 
 echo "autistic config applied <3"
