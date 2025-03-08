@@ -1,6 +1,7 @@
 <div align="center">
   
-  ![my-rice](https://i.imgur.com/1wPj3j7.png)
+  ![my-rice](https://i.imgur.com/Mvonruz.png)
+  ![overalls](https://i.imgur.com/q7GCQFC.png)
   ## 「見果ひうらのライスセットアップ！」♡
   
 </div>
@@ -10,31 +11,35 @@
 ### Currently Tracked Dotfiles:
   - konsole
   - neofetch
-  - Kvantum
+  - [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
+  - bash, uses [synth-shell](https://github.com/andresgongora/synth-shell) therefore is **required**
+<p>Some dotfiles aren't added yet, will add very soon!</p>
 
-<p>Frequently adding my configs at a slowish pace.. I'm still checking for types of dotfiles to upload </p>
+Using the default window manager in KDE Plasma known as **KWin** which includes basic tiling functionality
 
-<br>
+<hr>
 
 ### Installation
-```bash
+Clone the repo into your prefered directory
+```gnu
 git clone https://github.com/Koipix/cutie-dotfiles.git
 cd cutie-dotfiles/script
+chmod +x ./mklink.sh ./mkrestore.sh ./mkupload.sh
 ```
 
-### Apply Rice
-This applies the rice setup from the repo to your machine
+### Apply Config
+This applies the config from the repo while backing up yours to restore later on
 ```
 ./mklink.sh
 ```
 
-### Restore Rice
-If you want to restore back to your own rice setup
+### Restore Config
+If you want to restore to your own config setup (assuming you ran `./mklink.sh` first)
 ```
 ./mkrestore.sh
 ```
 
-### Upload Rice
+### Upload Config
 If you want to upload your own confiig changes to the repo (experimental)
 ```
 ./mkupload.sh
@@ -42,7 +47,7 @@ If you want to upload your own confiig changes to the repo (experimental)
 
 <br>
 
-<p>PS: <b>This is a experimental personal project of mine</b>—this might not work on your system or even bweak it but give it a try as long as you got the required dependencies and packages, feel free to review the shell scripts ♡</p>
+<p>PS: <b>This is a experimental personal project of mine</b>—this might not work on your system or even bweak it but give it a try as long as you know what you're doing ^-^ feel free to review the shell scripts ♡</p>
 
 <br>
 
