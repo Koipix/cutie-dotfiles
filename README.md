@@ -1,7 +1,18 @@
+## Linux
+
 <div align="center">
   
   ![my-rice](https://i.imgur.com/Mvonruz.png)
   ![overalls](https://i.imgur.com/q7GCQFC.png)
+  
+</div>
+
+## Windows (Arch on WSL)
+
+<div align="center">
+  
+  ![my-rice](https://i.imgur.com/hzaBGk0.jpeg)
+  ![overalls](https://i.imgur.com/fGIvcfX.png)
   ## 「見果ひうらのライスセットアップ！」♡
   
 </div>
@@ -13,6 +24,7 @@
   - neofetch
   - [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
   - bash, uses [synth-shell](https://github.com/andresgongora/synth-shell) therefore is **required**
+  - wezterm
 <p>Some dotfiles aren't added yet, will add very soon!</p>
 
 Using the default window manager in KDE Plasma known as **KWin** which includes basic tiling functionality
@@ -20,7 +32,7 @@ Using the default window manager in KDE Plasma known as **KWin** which includes 
 <hr>
 
 ### Installation
-Clone the repo into your prefered directory
+Clone the repo into your prefered directory (**my script only works for unix systems and its outdated, might use [stow](https://www.gnu.org/software/stow/manual/stow.html) soon**)
 ```gnu
 git clone https://github.com/Koipix/cutie-dotfiles.git
 cd cutie-dotfiles/script
