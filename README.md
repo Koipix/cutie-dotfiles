@@ -27,7 +27,10 @@
   - wezterm
 <p>Some dotfiles aren't added yet, will add very soon!</p>
 
-Using the default window manager in KDE Plasma known as **KWin** which includes basic tiling functionality
+### Window Manager:
+Linux: **Kwin** (KDE Plasma)
+
+Windows: **[GlazeWM](https://github.com/glzr-io/glazewm)**
 
 <hr>
 
