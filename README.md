@@ -25,7 +25,10 @@
   - [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
   - bash, uses [synth-shell](https://github.com/andresgongora/synth-shell) therefore is **required**
   - wezterm
-<p>Some dotfiles aren't added yet, will add very soon!</p>
+  - hyprland conf
+  - waybar
+  - kitty
+  - rofi
 
 ### Window Manager:
 Linux: **Kwin** (KDE Plasma)
